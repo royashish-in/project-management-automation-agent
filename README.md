@@ -20,7 +20,53 @@ The solution treats "Project Reporting" as an ETL (Extract, Transform, Load) pro
 
 ```mermaid
 graph TD
-    %% Styles
-    classDef legacy fill:#f9f9f9,stroke:#333,stroke-dasharray: 5 5;
-    classDef automation fill:#e1f5fe,stroke:#01579b,stroke-width:2px;
-    classDef ai fill:#e8
+    %% Styles - Optimized for Visibility
+    classDef legacy fill:#f9f9f9,stroke:#333,stroke-width:1px,color:#000;
+    classDef automation fill:#e1f5fe,stroke:#0277bd,stroke-width:2px,color:#000;
+    classDef ai fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#000;
+    classDef output fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#000;
+
+    subgraph "Data Sources (Legacy)"
+        direction TB
+        A[("Jira / Project Mgmt")]:::legacy
+        B[("Financial Dashboards")]:::legacy
+        C[("Timesheets & KPIs")]:::legacy
+    end
+
+    subgraph "Automation Engine (Python)"
+        direction TB
+        D[("Selenium Scraper")]:::automation
+        E[("Pandas Cleaning")]:::automation
+        F[("JSON Payload")]:::automation
+    end
+
+    subgraph "Intelligence (LangChain)"
+        direction TB
+        G[("LangChain Agent")]:::ai
+        H[("LLM Reasoning")]:::ai
+        I[("Variance Analysis")]:::ai
+    end
+
+    subgraph "Business Output"
+        direction TB
+        J[("Status Report")]:::output
+        K[("Exec Summary Slide")]:::output
+        L[("98% Effort Savings")]:::output
+    end
+
+    %% Connections
+    A --> D
+    B --> D
+    C --> D
+    
+    D --> E
+    E --> F
+    
+    F --> G
+    G <--> H
+    G --> I
+    
+    I --> J
+    I --> K
+    J --> L
+    K --> L
