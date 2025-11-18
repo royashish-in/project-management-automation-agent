@@ -1,11 +1,11 @@
 # AI-Driven Program Management Agent
-![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
-![LangChain](https://img.shields.io/badge/LangChain-Agents-green)
-![Selenium](https://img.shields.io/badge/Selenium-Automation-orange)
-![Status](https://img.shields.io/badge/Status-Production-success)
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Selenium](https://img.shields.io/badge/-selenium-%2343B02A?style=for-the-badge&logo=selenium&logoColor=white)
+![LangChain](https://img.shields.io/badge/LangChain-Agents-green?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Production-success?style=for-the-badge)
 
 ## 📋 Executive Summary
-**Problem:** Managing a **$32M USD Healthcare IT Engagement** involves collating data from disparate sources (Jira, Financial Dashboards, Excel trackers) for Weekly Status Reports (WSR). This manual "toil" consumed ~4-5 hours per week per Project Manager.
+**Problem:** Managing a **Multi **Million USD Healthcare IT Engagement** involves collating data from disparate sources (Jira, Financial Dashboards, Excel trackers) for Weekly Status Reports (WSR). This manual "toil" consumed ~4-5 hours per week per Project Manager.
 
 **Solution:** I architected and deployed a **Python + LangChain** automation agent that scrapes, aggregates, and analyzes project metrics.
 
